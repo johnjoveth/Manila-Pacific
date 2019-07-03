@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="https://.googleapis.com/css?famnily=Pacifico" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check In</title>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="bg-primary">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="login.html"> <img src="navbar.png" class="d-block w-100"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Flight Status</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reference.html">Check In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr class="hr1">
+
+    <!-- jumbotron -->
+    <div class="container font-weight-bold mb-4 mt-5">
+        <div class="h3">Select your flight to checkin:</div>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <div class="cont2 col-md-4 col-lg-6 border2 pb-3">
+            <div class="d-flex d-flex-row justify-content-around col-12 pt-5">
+                <div class="font-weight-bold h2 text-secondary">MNL</div>
+                <div><img src="plane.png"></div>
+                <div class="font-weight-bold h2 text-secondary">SIN</div>
+            </div>
+            <br>
+            <hr class="hr2">
+            <div class="d-flex justify-content-around">
+                <div class="font-weight-bold">Depature</div>
+                <div class="font-weight-bold">Arrival</div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div>11:00 PM</div>
+                <div>02:00 AM</div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around">
+                <div class="font-weight-bold">Date</div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div>12/31/9999</div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around">
+                <button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#agreeModal">CHECK IN
+                    NOW</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <div class="container mb-5">
+        <div class="cont2 col-md-4 col-lg-6 border2 pb-3">
+            <div class="d-flex d-flex-row justify-content-around col-12 pt-5">
+                <div class="font-weight-bold h2 text-secondary">SIN</div>
+                <div><img src="plane.png"></div>
+                <div class="font-weight-bold h2 text-secondary">MNL</div>
+            </div>
+            <br>
+            <hr class="hr2">
+            <div class="d-flex justify-content-around">
+                <div class="font-weight-bold">Depature</div>
+                <div class="font-weight-bold">Arrival</div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div>09:00 PM</div>
+                <div>12:00 AM</div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around">
+                <div class="font-weight-bold">Date</div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div>12/31/9999</div>
+            </div>
+            <br>
+            <div class="d-flex justify-content-around">
+                <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#agreeModal">CHECK
+                    IN NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="agreeModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Airport Guidelines</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><img src="hazards.png"></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab quasi iure soluta est explicabo, natus veritatis quis
+                        dignissimos vel blanditiis quia molestias facere, voluptates
+                        accusantium reprehenderit doloremque, officia consequatur ad!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <a href="checkin-home.html">
+                        <button type="button" class="btn btn-primary">I Agree</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
